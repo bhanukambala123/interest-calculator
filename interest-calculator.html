@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Interest Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="card">
+<h1>Interest Calculator</h1>
+
+
+<div class="tabs">
+<div class="tab active" data-target="simple">Simple Interest</div>
+<div class="tab" data-target="compound">Compound Interest</div>
+</div>
+
+
+<!-- Simple Interest Calculator -->
+<div id="simple" class="calc active">
+<label>Principal amount (₹)</label>
+<input id="s-principal" type="number" min="0" step="0.01" placeholder="Enter Amount">
+
+
+<label>Annual interest rate (%)</label>
+<input id="s-rate" type="number" min="0" step="0.01" placeholder="%">
+
+
+<div class="row">
+<div>
+<label>Years</label>
+<input id="s-years" type="number" min="0" placeholder="number of years">
+</div>
+<div>
+<label>Months</label>
+<input id="s-months" type="number" min="0" placeholder="number of months">
+</div>
+<div>
+<label>Days</label>
+<input id="s-days" type="number" min="0" placeholder="number of days">
+</div>
+</div>
+
+
+<button id="s-calc">Calculate Simple Interest</button>
+<div id="s-output" class="result"><div class="muted">Enter values and press Calculate.</div></div>
+</div>
+
+
+<!-- Compound Interest Calculator -->
+<div id="compound" class="calc">
+<label>Principal amount (₹)</label>
+<input id="c-principal" type="number" min="0" step="0.01" placeholder="Enter Amount">
+
+
+<label>Annual interest rate (%)</label>
+<input id="c-rate" type="number" min="0" step="0.01" placeholder="%">
+
+
+<div class="row">
+<div>
+<label>Years</label>
+<input id="c-years" type="number" min="0" placeholder="number of years">
+</div>
+<div>
+<label>Months</label>
+<input id="c-months" type="number" min="0" placeholder="number of months">
+</div>
+<div>
+<label>Days</label>
+<input id="c-days" type="number" min="0" placeholder="nummber of days">
+</div>
+</div>
+
+
+<label>Compounding frequency</label>
+<select id="c-freq">
+<option value="1">Annually (1)</option>
+<option value="2">Semi-annually (2)</option>
+<option value="4">Quarterly (4)</option>
+<option value="12">Monthly (12)</option>
+<option value="365">Daily (365)</option>
+</select>
+
+
+<button id="c-calc">Calculate Compound Interest</button>
+<div id="c-output" class="result"><div class="muted">Enter values and press Calculate.</div></div>
+</div>
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>

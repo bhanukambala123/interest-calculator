@@ -1,0 +1,28 @@
+:root {font-family: system-ui, Segoe UI, Roboto, Arial; color: #111;}
+body {display: flex; align-items: center; justify-content: center; min-height: 100vh; background: #f4f6fa; margin: 0;}
+.card {background: white; padding: 24px; border-radius: 12px; box-shadow: 0 6px 18px rgba(20,30,60,0.08); width: 480px;}
+h1 {font-size: 1.2rem; margin: 0 0 16px; text-align: center;}
+
+
+.tabs {display: flex; border-bottom: 1px solid #ddd; margin-bottom: 16px;}
+.tab {flex: 1; text-align: center; padding: 10px; cursor: pointer; font-weight: 600; border-radius: 8px 8px 0 0;}
+.tab.active {background: #2563eb; color: #fff;}
+
+
+.calc {display: none;}
+.calc.active {display: block;}
+
+
+label {display: block; font-size: .85rem; margin-top: 10px;}
+input, select {width: 100%; padding: 8px 10px; margin-top: 6px; border-radius: 8px; border: 1px solid #d6dde6; font-size: 0.95rem;}
+
+
+.row {display: flex; gap: 8px;}
+.row > * {flex: 1;}
+
+
+button {margin-top: 14px; width: 100%; padding: 10px; border-radius: 10px; border: 0; background: #2563eb; color: white; font-weight: 600; cursor: pointer;}
+
+
+.result {margin-top: 14px; padding: 12px; border-radius: 8px; background: #f1f5ff; border: 1px solid #e6eefc;}
+.muted {color: #6b7280; font-size: 0.85rem;}
